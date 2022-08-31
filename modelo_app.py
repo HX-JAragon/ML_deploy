@@ -30,11 +30,11 @@ with st.sidebar:
 
 def classifier(clasificador):
     if clasificador=='Decision Tree Classifier':
-        tree_classifier = load('tree_model.py')
+        tree_classifier = load('model/tree_model.py')
         resultado = tree_classifier.predict([[sepal_length,sepal_width,petal_length,petal_width]])
         
     elif clasificador=='K-Nearest Neighbors':
-        kneighbors_classifier = load('kneighbors_model.py')
+        kneighbors_classifier = load('model/kneighbors_model.py')
         resultado = kneighbors_classifier.predict([[sepal_length,sepal_width,petal_length,petal_width]])
     else:
         resultado = None
