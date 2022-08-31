@@ -1,0 +1,1 @@
+web: sh.setup && streamlit run modelo_app.py
